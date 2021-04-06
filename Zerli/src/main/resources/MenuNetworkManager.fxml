@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainMenuNetworkManager">
+   <children>
+      <AnchorPane prefHeight="166.0" prefWidth="900.0" style="-fx-background-color: #0074D9;">
+         <children>
+         	<ImageView styleClass="imgBtn" layoutX="860.0" layoutY="19.0" onMouseClicked="#onLogout">
+               <image>
+                  <Image url="images/logout.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="365.0" layoutY="3.0">
+               <image>
+                  <Image url="images/zerliLogo.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="415.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zerli"  wrappingWidth="75.00000894069672">
+               <font>
+                  <Font name="Century Gothic" size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="helloText" fill="WHITE" layoutX="14.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello, {user name}" wrappingWidth="350.06597900390625">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="428.0" prefWidth="900.0">
+         <children>
+            <AnchorPane styleClass="AnchBtn" fx:id="revenue" layoutX="69.0" layoutY="45.0" onMouseClicked="#revenue" prefHeight="150.0" prefWidth="270.0"  >
+               <children>
+                  <Text fill="#0074d9" layoutX="78.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Revenue">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <ImageView layoutX="103.0" layoutY="27.0">
+                     <image>
+                        <Image url="images/reportRevenue.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane styleClass="AnchBtn" fx:id="orders" layoutX="381.0" layoutY="45.0" onMouseClicked="#orders" prefHeight="150.0" prefWidth="270.0"  >
+               <children>
+                  <Text fill="#0074d9" layoutX="90.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orders">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <ImageView layoutX="103.0" layoutY="27.0">
+                     <image>
+                        <Image url="images/reportOrders.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane styleClass="AnchBtn" fx:id="complains" layoutX="69.0" layoutY="234.0" onMouseClicked="#complains" prefHeight="150.0" prefWidth="270.0"  >
+               <children>
+                  <Text fill="#0074d9" layoutX="58.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complains">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <ImageView layoutX="96.0" layoutY="27.0">
+                     <image>
+                        <Image url="images/complains.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane styleClass="AnchBtn" fx:id="satisfaction" layoutX="381.0" layoutY="234.0" onMouseClicked="#satisfaction" prefHeight="150.0" prefWidth="270.0"  >
+               <children>
+                  <Text fill="#0074d9" layoutX="59.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Satisfaction">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <ImageView layoutX="103.0" layoutY="27.0">
+                     <image>
+                        <Image url="images/reportSatisfaction.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Text layoutX="204.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selct one shop to get one shop view or 2 for 2 shop view" />
+            <ComboBox fx:id="shop2cmb" onAction="#changeQ" layoutX="662.0" layoutY="120.0" prefHeight="33.0" prefWidth="214.0" promptText="Shop 2" />
+            <ComboBox fx:id="shop1cmb" onAction="#changeQ" layoutX="660.0" layoutY="61.0" prefHeight="33.0" prefWidth="214.0" promptText="Shop 1" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

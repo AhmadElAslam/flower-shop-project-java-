@@ -1,0 +1,163 @@
+
+
+
+
+/* #0074D9 */
+
+/*******************************************************************************
+ *                                                                             *
+ * Button & ToggleButton                                                       *
+ *                                                                             *
+ ******************************************************************************/
+ 
+ 
+ .button{
+ -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.2) , 5, 0.0 , 0 , 1 );
+-fx-background-color: 
+     #c3c4c4,
+     linear-gradient(#d6d6d6 50%, white 100%),
+     radial-gradient(center 50% -40%, radius 100%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+ -fx-text-fill: #515151;
+ -fx-border-color: gray;
+ -fx-border-radius: 20;
+ -fx-background-radius: 20;
+ -fx-font-size:16px;
+ }
+ 
+ .button:hover{
+ -fx-background-color: 
+     #c3c4c4,
+     linear-gradient(#d6d6d6 70%, white 100%),
+     radial-gradient(center 50% -40%, radius 100%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+ -fx-text-fill: black;
+ -fx-cursor: hand;
+ }
+ 
+  .button:pressed{
+ -fx-background-color: 
+     #c3c4c4,
+     linear-gradient(#d6d6d6 120%, white 100%),
+     radial-gradient(center 50% -40%, radius 100%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+ -fx-text-fill: black;
+ -fx-cursor: hand;
+ }
+ 
+/* Anchor buttons */
+.AnchBtn {
+	-fx-background-color: 
+     #c3c4c4,
+     linear-gradient(#d6d6d6 50%, white 100%),
+     radial-gradient(center 50% -40%, radius 100%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+	-fx-border-color: gray;
+	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.2) , 5, 0.0 , 0 , 1 );
+	-fx-border-radius: 9;
+	-fx-background-radius: 9;
+}
+
+
+.AnchBtn:hover {
+	-fx-cursor: hand;
+	-fx-background-color: #edf6ff;
+}
+
+.AnchBtn:pressed {
+	-fx-cursor: hand;
+	-fx-background-color: #b2d8ff;
+}
+
+/*image Button*/
+.imgBtn {
+	-fx-cursor: hand;
+	
+}
+
+.imgBtn:hover {
+	-fx-opacity: 0.8;
+	
+}
+
+.imgBtn:pressed {
+	-fx-opacity: 0.7;
+}
+
+/* Label button */
+.labelBtn:hover {
+	-fx-cursor: hand;
+}
+ 
+
+ 
+ /*******************************************************************************
+ *                                                                             *
+ * Text, Text field & Text area                                                *
+ *                                                                             *
+ ******************************************************************************/
+ /*texts*/
+.text {
+	-fx-font-family: "Microsoft JhengHei Light", Arial, SansSerif;
+}
+
+
+ .combo-box .text {
+ 	-fx-font-family: Arial;
+ }
+ 
+ .combo-box:focused {
+ 	-fx-background-insets: -1 -1 -1 -1, 0 0 0 0, 0 0 0 0;
+ 	-fx-background-color: #a9a9a9 , #808080, white;
+ }
+ 
+ .titleText {
+ 	-fx-font-family: "Microsoft JhengHei Light", Arial, SansSerif;
+ 	-fx-font-size: 36px;
+ 	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 7, 0.0 , 0 , 0 );
+ }
+ 
+ .titleText2 {
+ 	 	-fx-font-family: "Microsoft JhengHei Light", Arial, SansSerif;
+ 		-fx-font-size: 24px;
+ 		-fx-text-fill: black;
+ }
+ 
+ .titleText3 {
+ 	 	-fx-font-family: "Brush Script MT", Arial, SansSerif;
+ 		-fx-font-size: 52px;
+ 		-fx-text-fill: Orange;
+ }
+ 
+ .titleText4 {
+ 	 	-fx-font-family: "Microsoft JhengHei Light", Arial, SansSerif;
+ 		-fx-font-size: 17px;
+ 		-fx-text-fill: black;
+ }
+ 
+ .errTxt {
+ 	-fx-font-family: "Microsoft JhengHei", Arial, SansSerif;
+ 	-fx-font-size: 15px;
+ 	-fx-text-fill: #b22020;
+ }
+ 
+.text-field {
+    -fx-prompt-text-fill: gray;
+    -fx-font-family: Arial;
+    
+}
+
+.text-field .text {
+    -fx-font-family: Arial;
+    
+}
+
+.text-field:empty .text {
+    -fx-effect: null ;
+    -fx-font-family: Arial;
+}
+
+.text-field:focused {
+	 -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.2) , 5, 0.0 , 0 , 0 );
+	-fx-background-color: #a9a9a9 , white , white;
+	-fx-background-insets: -1 -1 -1 -1, 0 0 0 0, 0 0 0 0;
+	 -fx-font-family: Arial;
+}
+
+

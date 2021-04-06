@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.UpdateMyDataController">
+   <children>
+      <AnchorPane prefHeight="166.0" prefWidth="900.0" style="-fx-background-color: #0074D9;">
+         <children>
+            <ImageView layoutX="365.0" layoutY="3.0">
+               <image>
+                  <Image url="images/zerliLogo.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="415.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zerli" wrappingWidth="75.00000894069672">
+               <font>
+                  <Font name="Century Gothic" size="36.0" />
+               </font>
+            </Text>
+            <Text styleClass="titleText" fill="WHITE" layoutX="14.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit my account" wrappingWidth="350.06597900390625">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Text>
+            <ImageView styleClass="imgBtn" fx:id="menu" layoutX="846.0" layoutY="19.0" onMouseClicked="#onMenuClick">
+               <image>
+                  <Image url="images/lines-menu.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="428.0" prefWidth="900.0">
+         <children>
+            <AnchorPane prefHeight="442.0" prefWidth="302.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Text styleClass="titleText2" fill="#111111" layoutX="74.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="creditCardTxt" layoutX="24.0" layoutY="90.0" prefHeight="24.0" prefWidth="253.0" promptText="Credit card" />
+                  <TextField fx:id="MonthTxt" layoutX="24.0" layoutY="122.0" prefHeight="26.0" prefWidth="100.0" promptText="Month" />
+                  <TextField fx:id="YearTxt" layoutX="161.0" layoutY="122.0" prefHeight="26.0" prefWidth="117.0" promptText="Year" />
+                  <Text layoutX="140.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="CVVTxt" layoutX="24.0" layoutY="161.0" prefHeight="24.0" prefWidth="253.0" promptText="CVV" />
+                  <Button fx:id="updatePayment" layoutX="88.0" layoutY="208.0" mnemonicParsing="false" onAction="#onupdatePayment" prefHeight="33.0" prefWidth="93.0" text="Update">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="315.0" prefHeight="442.0" prefWidth="586.0">
+               <children>
+                  <AnchorPane layoutX="-12.0" prefHeight="442.0" prefWidth="315.0" style="-fx-background-color: #ffffff; -fx-border-color: white #dedede white #dedede;">
+                     <children>
+                        <Text styleClass="titleText2" fill="BLACK" layoutX="90.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="General">
+                           <font>
+                              <Font size="40.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="usernameTxt" layoutX="29.0" layoutY="94.0" prefHeight="24.0" prefWidth="253.0" promptText="Username" />
+                        <TextField fx:id="fnameTxt" layoutX="29.0" layoutY="183.0" prefHeight="24.0" prefWidth="253.0" promptText="First name" />
+                        <PasswordField fx:id="passwordTxt" layoutX="29.0" layoutY="130.0" prefHeight="26.0" prefWidth="254.0" promptText="password" />
+                        <Separator layoutX="29.0" layoutY="168.0" prefHeight="6.0" prefWidth="254.0" />
+                        <TextField fx:id="lnameTxt" layoutX="29.0" layoutY="221.0" prefHeight="24.0" prefWidth="253.0" promptText="Last name" />
+                        <TextField fx:id="phoneTxt" layoutX="31.0" layoutY="258.0" prefHeight="24.0" prefWidth="253.0" promptText="phone" />
+                        <Button fx:id="updateGeneral" layoutX="111.0" layoutY="315.0" mnemonicParsing="false" onAction="#onupdateGeneral" prefHeight="33.0" prefWidth="93.0" text="Update">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="303.0" prefHeight="442.0" prefWidth="282.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Text styleClass="titleText2" fill="#111111" layoutX="73.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+                           <font>
+                              <Font size="40.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="cityTxt" layoutX="17.0" layoutY="98.0" prefHeight="24.0" prefWidth="253.0" promptText="City" />
+                        <TextField fx:id="StreetTxt" layoutX="17.0" layoutY="134.0" prefHeight="24.0" prefWidth="253.0" promptText="Street" />
+                        <TextField fx:id="sNumberTxt" layoutX="17.0" layoutY="170.0" prefHeight="24.0" prefWidth="253.0" promptText="Number" />
+                        <Button fx:id="updateAdress" layoutX="94.0" layoutY="230.0" mnemonicParsing="false" onAction="#onupdateAdress" prefHeight="33.0" prefWidth="93.0" text="Update">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

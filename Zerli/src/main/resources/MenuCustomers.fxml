@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainMenuCustomer">
+   <children>
+      <AnchorPane prefHeight="166.0" prefWidth="900.0" style="-fx-background-color: #0074D9;">
+         <children>
+         	<ImageView accessibleRole="BUTTON" layoutX="854.0" layoutY="14.0" onMouseClicked="#onLogout" styleClass="imgBtn">
+               <image>
+                  <Image url="images/logout.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text fx:id="helloText" fill="WHITE" layoutX="14.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello, {user name}" wrappingWidth="350.06597900390625">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="24.0" />
+               </font>
+            </Text>
+            <ImageView layoutX="756.0" layoutY="127.0" onMousePressed="#onNumberOfItems" styleClass="imgBtn">
+               <image>
+                  <Image url="images/cart.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="numberOfItems" fill="WHITE" layoutX="795.0" layoutY="151.0" onMousePressed="#onNumberOfItems" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelBtn" text="0 items" wrappingWidth="90.86328125">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="24.0" />
+               </font>
+            </Text>
+            <ImageView layoutX="365.0" layoutY="3.0">
+               <image>
+                  <Image url="images/zerliLogo.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="415.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zerli" wrappingWidth="75.00000894069672">
+               <font>
+                  <Font name="Century Gothic" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="428.0" prefWidth="900.0" styleClass="img">
+         <children>
+            <AnchorPane fx:id="catalog" layoutX="143.0" layoutY="45.0" onMouseClicked="#catalog" prefHeight="150.0" prefWidth="270.0" styleClass="AnchBtn">
+               <children>
+                  <Text fill="#0074d9" layoutX="85.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catalog">
+                     <font>
+                        <Font name="Microsoft JhengHei Light" size="30.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="70.0" fitWidth="75.0" layoutX="98.0" layoutY="21.0">
+                     <image>
+                        <Image url="images/catalog.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="customMade" layoutX="475.0" layoutY="45.0" onMouseClicked="#customMade" prefHeight="150.0" prefWidth="270.0" styleClass="AnchBtn">
+               <children>
+                  <Text fill="#0074d9" layoutX="22.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Custom-made order">
+                     <font>
+                        <Font name="Microsoft JhengHei Light" size="24.0" />
+                     </font>
+                  </Text>
+                  <ImageView layoutX="103.0" layoutY="26.0">
+                     <image>
+                        <Image url="images/custom-made.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="history" layoutX="143.0" layoutY="234.0" onMouseClicked="#orderHistory" prefHeight="150.0" prefWidth="270.0" styleClass="AnchBtn">
+               <children>
+                  <Text fill="#0074d9" layoutX="45.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order History">
+                     <font>
+                        <Font name="Microsoft JhengHei Light" size="30.0" />
+                     </font>
+                  </Text>
+                  <ImageView layoutX="103.0" layoutY="29.0">
+                     <image>
+                        <Image url="images/order-history.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="updateAccount" layoutX="475.0" layoutY="234.0" onMouseClicked="#updateAccount" prefHeight="150.0" prefWidth="270.0" styleClass="AnchBtn">
+               <children>
+                  <Text fill="#0074d9" layoutX="51.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Account">
+                     <font>
+                        <Font name="Microsoft JhengHei Light" size="30.0" />
+                     </font>
+                  </Text>
+                  <ImageView layoutX="103.0" layoutY="24.0">
+                     <image>
+                        <Image url="images/update-account.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainMenuService">
+   <children>
+      <AnchorPane prefHeight="166.0" prefWidth="900.0" style="-fx-background-color: #0074D9;">
+         <children>
+         	<ImageView styleClass="imgBtn" layoutX="860.0" layoutY="19.0" onMouseClicked="#onLogout">
+               <image>
+                  <Image url="images/logout.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="365.0" layoutY="3.0">
+               <image>
+                  <Image url="images/zerliLogo.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="415.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zerli" wrappingWidth="75.00000894069672">
+               <font>
+                  <Font name="Century Gothic" size="36.0" />
+               </font>
+            </Text>
+            <Text styleClass="titleText" fx:id="helloText" fill="WHITE" layoutX="14.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello, {user name}" wrappingWidth="350.06597900390625">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="428.0" prefWidth="900.0">
+         <children>
+            <AnchorPane fx:id="complains" layoutX="168.0" layoutY="117.0" onMouseClicked="#complains" prefHeight="150.0" prefWidth="220.0" styleClass="AnchBtn">
+               <children>
+                  <Text fill="#0074d9" layoutX="40.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complains">
+                     <font>
+                        <Font name="Microsoft JhengHei Light" size="30.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="70.0" fitWidth="75.0" layoutX="81.0" layoutY="23.0">
+                     <image>
+                        <Image url="images/complains.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="survey" layoutX="496.0" layoutY="117.0" onMouseClicked="#survey" prefHeight="150.0" prefWidth="220.0" styleClass="AnchBtn">
+               <children>
+                  <Text fill="#0074d9" layoutX="60.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surveys">
+                     <font>
+                        <Font name="Microsoft JhengHei Light" size="30.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="70.0" fitWidth="75.0" layoutX="77.0" layoutY="25.0">
+                     <image>
+                        <Image url="images/surveyCustomerService.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AuthorizeUsersController">
+   <children>
+      <AnchorPane prefHeight="166.0" prefWidth="900.0" style="-fx-background-color: #0074D9;">
+         <children>
+            <ImageView layoutX="365.0" layoutY="3.0">
+               <image>
+                  <Image url="images/zerliLogo.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="415.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zerli" wrappingWidth="75.00000894069672">
+               <font>
+                  <Font name="Century Gothic" size="36.0" />
+               </font>
+            </Text>
+            <Text styleClass="titleText" fill="WHITE" layoutX="570.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Authorize Users" wrappingWidth="350.06597900390625">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Text>
+            <ImageView styleClass="imgBtn" fx:id="menu" layoutX="846.0" layoutY="19.0" onMouseClicked="#onMenuClick">
+               <image>
+                  <Image url="images/lines-menu.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="428.0" prefWidth="900.0">
+         <children>
+            <AnchorPane prefHeight="442.0" prefWidth="315.0" style="-fx-background-color: #f2f2f2;">
+               <children>
+                  <Text fill="#111111" layoutX="73.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Authorize">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtCVV" layoutX="32.0" layoutY="221.0" prefHeight="33.0" prefWidth="252.0" promptText="CVV" />
+                  <Button fx:id="btnAdd" layoutX="100.0" layoutY="265.0" mnemonicParsing="false" onAction="#onBtnClicked" prefHeight="34.0" prefWidth="120.0" text="Authorize" />
+                  <TextField fx:id="txtCardNumber" layoutX="32.0" layoutY="142.0" prefHeight="33.0" prefWidth="252.0" promptText="Credit card number" />
+                  <ComboBox fx:id="subscribeCmb" layoutX="32.0" layoutY="102.0" prefHeight="26.0" prefWidth="252.0" />
+                  <Text layoutX="54.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select user from the table to authorize" wrappingWidth="208.80004151556017" />
+                  <TextField fx:id="monthTxt" layoutX="54.0" layoutY="186.0" prefHeight="26.0" prefWidth="75.0" promptText="Month" />
+                  <Text layoutX="153.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="YearTxt" layoutX="187.0" layoutY="186.0" prefHeight="26.0" prefWidth="75.0" promptText="Year" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="315.0" prefHeight="442.0" prefWidth="586.0">
+               <children>
+                  <TableView fx:id="UsersTable" prefHeight="442.4" prefWidth="586.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

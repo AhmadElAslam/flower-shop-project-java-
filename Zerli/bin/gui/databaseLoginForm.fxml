@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<VBox prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DatabaseLoginController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #DDDDDD;" VBox.vgrow="ALWAYS">
+         <children>
+            <AnchorPane prefHeight="150.0" prefWidth="700.0" style="-fx-background-color: #0074D9;" />
+            <AnchorPane layoutX="150.0" layoutY="45.0" prefHeight="378.0" prefWidth="400.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <ImageView layoutX="136.0" layoutY="22.0">
+                     <image>
+                       	<Image url="images/server.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="dbName" layoutX="73.0" layoutY="167.0" prefHeight="26.0" prefWidth="268.0" promptText="Database name" text="zerli" />
+                  <Button fx:id="start" layoutX="143.0" layoutY="294.0" mnemonicParsing="false" onAction="#onServerStart" prefHeight="46.0" prefWidth="128.0" text="Start server" />
+                  <Text id="loginMessage" fx:id="loginMessage" layoutX="73.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" wrappingWidth="268.00000071525574" />
+                  <PasswordField fx:id="dbPassword" layoutX="73.0" layoutY="255.0" prefHeight="26.0" prefWidth="268.0" promptText="DB password" text="dbapp1605" />
+                  <TextField fx:id="dbUserName" layoutX="73.0" layoutY="209.0" prefHeight="26.0" prefWidth="268.0" promptText="DB username" text="root" />
+               </children>
+            </AnchorPane>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
